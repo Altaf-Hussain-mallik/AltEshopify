@@ -1,48 +1,67 @@
-<!-- <ul>
-  <li>
-    <a
-      class="alfa"
-      routerLink="/"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ariaCurrentWhenActive="page"
-      >Home</a
-    >
-  </li>
-  <li>
-    <a
-      routerLink="/services"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ariaCurrentWhenActive="page"
-      >Services</a
-    >
-  </li>
-  <li>
-    <a
-      routerLink="/technologies"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ariaCurrentWhenActive="page"
-      >Technologies</a
-    >
-  </li>
-  <li>
-    <a
-      routerLink="/portfolio"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ariaCurrentWhenActive="page"
-      >Portfolio</a
-    >
-  </li>
-  <li>
-    <a
-      routerLink="/company"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      ariaCurrentWhenActive="page"
-      >Company</a
-    >
-  </li>
-</ul> -->
+<header [class.visible]="isHeaderVisible">
+  <div class="alt__container">
+    <div class="alt__header">
+      <div>
+        <div class="alt__logo">
+          <img src="../assets/icon/icon.svg" alt="logo-icon">
+        </div>
+      </div>
+      <nav class="alt__nav">
+        <ul class="alt__menu">
+          <li class="alt__menuItems">
+            <a
+              routerLink="/services"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Services</a
+            >
+          </li>
+          <li class="alt__menuItems">
+            <a
+              routerLink="/technologies"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Technologies</a
+            >
+          </li>
+          <li class="alt__menuItems">
+            <a
+              routerLink="/portfolio"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Portfolio</a
+            >
+          </li>
+          <li class="alt__menuItems">
+            <a
+              routerLink="/company"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Company</a
+            >
+          </li>
+          <li class="alt__menuItems">
+            <a
+              class="alfa"
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Partner With Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="alt__contact">
+        <span class="alt__converesation">
+          <img src="../assets/icon/conversations.svg" alt="massage-icon">
+        </span>
+        <span class="alt__contanctNo">+91 9572878218</span>
+      </div>
+    </div>
+  </div>
+</header>

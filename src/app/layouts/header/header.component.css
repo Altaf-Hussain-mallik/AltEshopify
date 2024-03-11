@@ -1,6 +1,65 @@
-.active{
-    color: red;
-    border-bottom: 2px solid ☐ #7c3aed;
-    transform: scale (1.1);
-    transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+header{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23);
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+header.visible {
+    top: 0;
+  }
+.alt__header{
+    height: 64px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alt__logo{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+.alt__logo img{
+    height: 100%;
+    width: 100%;
+}
+.alt__menu{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.alt__menuItems{
+    padding: 20px 0;
+    display: inline-block;
+    position: relative;
+    font-family: "SailecMedium" !important;
+}
+.alt__menuItems>a{
+    color: #0e2b5c;
+}
+.alt__converesation{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+   }
+.alt__converesation>img{
+    width: 100%;
+    height: 100%;
+   }
+
+.alt__contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+.alt__contanctNo{
+    color: #0e2b5c;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-family: "SailecMedium";
 }
