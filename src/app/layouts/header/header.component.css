@@ -1,6 +1,9 @@
 header{
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23);
+    background-color: rgba(255, 255, 255, 0.99);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0 5px 60px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 5px 60px;
     position: fixed;
     top: -100px;
     left: 0;
@@ -27,18 +30,30 @@ header.visible {
     height: 100%;
     width: 100%;
 }
-.alt__menu{
-    width: 800px;
+.alt__nav{
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.alt__menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .alt__menuItems{
-    padding: 20px 0;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    margin: 0 2%;
+    flex-wrap: wrap;
+    flex: 0 0 15%;
     position: relative;
     font-family: "SailecMedium" !important;
 }
 .alt__menuItems>a{
+    font-size: 16px;
     color: #0e2b5c;
 }
 .alt__converesation{
@@ -63,3 +78,21 @@ header.visible {
     font-size: 16px;
     font-family: "SailecMedium";
 }
+.alt__partnerWithUs{
+    position: relative;
+    flex: 0 0 17%;
+}
+.alt__partnerWithUs::before{
+  content: "";
+  display: block;
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  border: 2px solid #00cdac;
+  border-radius: 4px;
+}
+
+/* Home page styles */
+

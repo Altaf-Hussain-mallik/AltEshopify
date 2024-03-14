@@ -143,9 +143,6 @@ border-spacing: 0;
       max-width: 1500px;
       margin: 0 auto;
    }
-   .alt__nav{
-    display: flex;
-    justify-content: space-between;
-   }
+  
  
 
